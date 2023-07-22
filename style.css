@@ -159,7 +159,7 @@ body {
 @media screen and (min-width: 767px) {
     .container {
         flex-direction: row;
-        margin: 70px auto;
+        margin: 150px auto;
         width: 650px; 
         background: var(--White);
     }
