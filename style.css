@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --Lightredbackground: hsla(0, 100%, 67%, 0.1);
+    --Orangeyyellowbackground: hsla(39, 100%, 56%, 0.1);
+    --Greentealbackground: hsla(166, 100%, 37%, 0.1);
+    --Cobaltbluebackground: hsla(234, 85%, 45%, 0.1);
+    --Lightslatebluebackground: hsla(252, 100%, 67%, 1);
+    --Lightroyalbluebackground: hsla(241, 81%, 54%, 0.8);
+    --Violetbluecircle: hsla(256, 72%, 46%, 1);
+    --Persianbluecircle: hsla(241, 72%, 46%, 0.3);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .result-section {
+    background: var(--Lightroyalbluebackground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 40px 40px;
+    padding: 25px 60px 40px 60px;
+    color: var(--Lightlavender);
+}
+.score {
+    background: var(--Persianbluecircle);
+    border-radius: 50%;
+    padding: 35px 35px 15px 35px;
+    text-align: center;
+    line-height: 30px;
+}
+.score p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--White);
+}
+.score span {
+    font-size: 14px;
+}
+.result-head {
+    padding-bottom: 30px;
+}
+.result-lead {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--White);
+}
+.result-report {
+    font-size: 16px;
+    text-align: center;
+}
+.summary {
+    padding: 20px 40px;
+    font-size: 17px;
+}
+.summary-head {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Darkgrayblue);
+}
+.reaction-table,
+.memory-table,
+.verbal-table,
+.visual-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 17px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.reaction-table {
+    background: var(--Lightredbackground);
+}
+.memory-table {
+    background: var(--Orangeyyellowbackground);
+}
+.verbal-table {
+    background: var(--Greentealbackground);
+}
+.visual-table {
+    background: var(--Cobaltbluebackground);
+}
+.left-column {
+    display: flex;
+}
+.left-column img {
+    padding-right: 10px;
+}
+.reaction-text {
+    color: var(--Lightred);
+    font-weight: 700;
+}
+.memory-text {
+    color: var(--Orangeyyellow);
+    font-weight: 700;
+}
+.verbal-text {
+    color: var(--Greenteal);
+    font-weight: 700;
+}
+.visual-text {
+    color: var(--Cobaltblue);
+    font-weight: 700;
+}
+.your-score {
+    font-weight: 700;
+    color: var(--Darkgrayblue);
+}
+.overall-score {
+    color: var(--Lightlavender);
+    font-weight: 700;
+}
+.continue-button {
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--Darkgrayblue);
+    color: var(--White);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        flex-direction: row;
+        margin: 70px auto;
+        width: 650px; 
+        background: var(--White);
+    }
+    .container .result-section {
+        border-radius: 40px 40px 40px 40px;
+        padding: 0px 50px 0px 50px;
+    }
+    .score {
+        padding: 40px 50px 20px 50px;
+        line-height: 45px;
+    }
+    .score p {
+        font-size: 3.8rem;
+    }
+    .score span {
+        font-size: 14px;
+    }
+    .container .summary {
+        border-radius: 0px 40px 40px 0px;
+        padding: 20px 40px;
+        box-shadow: 10px 5px 30px var(--Lightlavender);
+        width: 600px;
+    }
+
+}
